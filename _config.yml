@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Chen-Xiao"
+  name             : "Chen-Xiao Gao"
   avatar           : "images/avatar.jpeg"
   bio              : "M.Sc. student @ Nanjing University, focusing on reinforcement learning."
   location         : "Nanjing, China"

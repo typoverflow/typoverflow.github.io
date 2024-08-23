@@ -72,11 +72,11 @@ Lei Song*, **Chen-Xiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzh
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2024</div><img src='images/CPR/workflow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-Efficient and Stable Offline-to-online Reinforcement Learning via Continual Policy Revitalization (to appear)
+[Efficient and Stable Offline-to-online Reinforcement Learning via Continual Policy Revitalization](https://www.ijcai.org/proceedings/2024/477)
 
 Rui Kong, Chenyang Wu, **Chen-Xiao Gao**, Yang Yu, Zongzhang Zhang
 
-<!-- [**Code**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
+[**Code**](https://github.com/LyndonKong/CPR) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We identify two pain points in offline-to-online reinforcement learning: 1) value overestimation causes fluctuations during learning, and 2) the primacy bias hinders the policy from further improvement.
 - With the proposed Continual Policy Revitalization, we can fine-tune pret-rained policies efficiently and stably.
 </div>
