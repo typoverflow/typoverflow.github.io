@@ -17,19 +17,20 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a M.Sc. student at Nanjing University, advised by Prof. Zongzhang Zhang. Before starting my M.Sc., I received my B.Sc. degree from Nanjing University in 2022 and interned at ByteDance. 
+I am a third-year M.Sc. student at Nanjing University, advised by Prof. Zongzhang Zhang. Before starting my M.Sc., I received my B.Sc. degree from Nanjing University in 2022 and interned at ByteDance. 
 
-My research interest includes reinforcement learning (RL) and generative models, with a particular focus on offline reinforcement learning, which I believe provides a viable path for intelligent decision-making systems. Now I am interested in designing efficient and scalable algorithms by leveraging the power of generative models, such as large language models (LLMs) and diffusion models.
+My research interest lies in offline reinforcement learning (RL). During my M.Sc., I explored various aspects of offline RL, including offline policy optimization, offline model-based RL, and offline meta-RL. Apart from my research focus, I had experience in applied reinforcement learning in the industry, such as Game AI and RLHF for LLMs. Recently, I am interested in leveraging the power of generative models, such as LLMs and diffusion models, to design efficient and scalable RL algorithms. I believe generative models themselves provide an abstract and unified representation to describe the nature, on top of which we can build intelligent decision-making systems. 
 
 <!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
  -->
 
 # 🔥 News
+- *2024.09*: &nbsp;🎉🎉 One paper got accepted by NeurIPS 2024.
 - *2024.03*: &nbsp;🎉🎉 One paper got accepted by ICLR 2024.
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">preprint</div><img src='images/Diff-SR/diffusion.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/Diff-SR/diffusion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Diffusion Spectral Representation for Reinforcement Learning
@@ -38,8 +39,8 @@ My research interest includes reinforcement learning (RL) and generative models,
 **Chen-Xiao Gao\***, Dmitry Shribak*, Yitong Li, Chenjun Xiao, Bo Dai
 
 [**Code**](https://github.com/haotiansun14/rl-rep) | [**Project**](https://haotiansun14.github.io/rl-rep-page/)
-- We leverages the flexibility of diffusion models by extracting diffusion spectral representations (Diff-SR) that capture the dynamics structure.
-- Diff-SR is sufficient to represent the value function of any policy linearly, paving the way for efficient planning and exploration for diffusion-based RL. 
+- We leverages the flexibility of diffusion models and extract spectral representations (Diff-SR) that capture the dynamics structure.
+- Diff-SR is able to represent the value function of any policy sufficiently, paving the way for efficient planning and exploration for downstream RL optimization. 
 </div>
 </div>
 
@@ -52,7 +53,7 @@ My research interest includes reinforcement learning (RL) and generative models,
 
 [**Code**](https://github.com/typoverflow/WiseRL) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - We identified shortages of the widely used preference modeling method in existing PbRL settings.
-- HPL leverages the vast unlabeled dataset to facilitate credit assignment, providing robust and advantageous rewards for down-steam RL optimization.
+- HPL leverages the vast unlabeled dataset to facilitate credit assignment, providing robust and advantageous rewards for downsteam RL optimization.
 </div>
 </div>
 
