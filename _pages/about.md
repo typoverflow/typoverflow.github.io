@@ -149,14 +149,12 @@ Renzhe Zhou, **Chen-Xiao Gao**, Zongzhang Zhang, Yang Yu
 <!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
-- *2022.06* Outstanding Graduate of School of AI, Nanjing University
 - *2021.12* National Scholarship
 - *2020.10* Chow Tai Fook Scholarship
 - *2020.10* People's Scholarship of Nanjing University
-- *2019.10* Scholarship of School of AI, Nanjing University
 
 # 📖 Educations
-- *2022.09 - now*, School of AI, Nanjing University
+- *2022.09 - now*, Computer Science, Nanjing University
 - *2018.09 - 2022.06*, Computer Science, Nanjing University
 
 <!-- # 💬 Invited Talks
