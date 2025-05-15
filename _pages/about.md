@@ -21,14 +21,44 @@ I am a third-year M.Sc. student at Nanjing University, advised by Prof. Zongzhan
 
 My research interest lies in offline reinforcement learning (RL). During my M.Sc., I explored various aspects of offline RL, including offline policy optimization, offline model-based RL, and offline meta-RL. Apart from my research focus, I had experience in applied reinforcement learning in the industry, such as Game AI and RLHF for LLMs. Recently, I am interested in leveraging the power of generative models, such as LLMs and diffusion models, to design efficient and scalable RL algorithms. I believe generative models themselves provide an abstract and unified representation to describe the nature, on top of which we can build intelligent decision-making systems. 
 
-<!-- My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
- -->
 
 # 🔥 News
-- *2024.09*: &nbsp;🎉🎉 One paper got accepted by NeurIPS 2024.
-- *2024.03*: &nbsp;🎉🎉 One paper got accepted by ICLR 2024.
+- *2025.05*: &nbsp;🎉🎉 BDPO is accepted by ICML 2025!
+- *2025.05*: &nbsp;🎉🎉 RIBBO is accepted by IJCAI 2025!
+- *2024.09*: &nbsp;🎉🎉 DiffSR is accepted by NeurIPS 2024!
+- *2024.03*: &nbsp;🎉🎉 ReDM is accepted by ICLR 2024!
 
 # 📝 Publications 
+
+<!------------------->
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='images/BDPO/bdpo.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Behavior-Regularized Diffusion Policy Optimization for Offline Reinforcement Learning](https://arxiv.org/abs/2502.04778)
+
+**Chen-Xiao Gao**, Chenyang Wu, Mingjun Cao, Chenjun Xiao, Yang Yu, Zongzhang Zhang
+<strong><span class='show_paper_citations' data='1rG07lQAAAAJ:WF5omc3nYNoC'></span></strong>
+- We Introduce pathwise KL to estimate and control the divergences between two diffusion policies;
+- Leveraging pathwise KL, we propose an actor-critic framework with two-time-scale temporal difference learning to efficiently optimize diffusion policies with behavior regularization.
+</div>
+</div>
+
+<!------------------->
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/RIBBO/workflow.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Reinforced In-Context Black-Box Optimization](https://arxiv.org/abs/2402.17423)
+
+Lei Song*, **Chen-Xiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzhang Zhang, Chao Qian
+
+[**Code**](https://github.com/songlei00/RIBBO) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:_FxGoFyzp5QC'></span></strong>
+- RIBBO distills and reinforces existing black-box optimization algorithms by fitting regret augmented learning histories of the behavior algorithms.
+- By specifying a suitable regret-to-go, RIBBO generate better query decisions by auto-regressively predicting the next points.
+</div>
+</div>
+
+<!------------------->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/Diff-SR/diffusion.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -38,7 +68,7 @@ My research interest lies in offline reinforcement learning (RL). During my M.Sc
 
 **Chen-Xiao Gao\***, Dmitry Shribak*, Yitong Li, Chenjun Xiao, Bo Dai
 
-[**Code**](https://github.com/haotiansun14/rl-rep) | [**Project**](https://haotiansun14.github.io/rl-rep-page/)
+[**Code**](https://github.com/haotiansun14/rl-rep) | [**Project**](https://haotiansun14.github.io/rl-rep-page/)<strong><span class='show_paper_citations' data='1rG07lQAAAAJ:eQOLeE2rZwMC'></span></strong>
 - We leverages the flexibility of diffusion models and extract spectral representations (Diff-SR) that capture the dynamics structure.
 - Diff-SR is able to represent the value function of any policy sufficiently, paving the way for efficient planning and exploration for downstream RL optimization. 
 </div>
@@ -51,24 +81,13 @@ My research interest lies in offline reinforcement learning (RL). During my M.Sc
 
 **Chen-Xiao Gao**, Shengjun Fang, Chenjun Xiao, Yang Yu, Zongzhang Zhang
 
-[**Code**](https://github.com/typoverflow/WiseRL) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Code**](https://github.com/typoverflow/WiseRL) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:Y0pCki6q_DkC'></span></strong>
 - We identified shortages of the widely used preference modeling method in existing PbRL settings.
 - HPL leverages the vast unlabeled dataset to facilitate credit assignment, providing robust and advantageous rewards for downsteam RL optimization.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">preprint</div><img src='images/RIBBO/workflow.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Reinforced In-Context Black-Box Optimization](https://arxiv.org/abs/2402.17423)
-
-Lei Song*, **Chen-Xiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzhang Zhang, Chao Qian
-
-[**Code**](https://github.com/songlei00/RIBBO) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- RIBBO distills and reinforces existing black-box optimization algorithms by fitting regret augmented learning histories of the behavior algorithms.
-- By specifying a suitable regret-to-go, RIBBO generate better query decisions by auto-regressively predicting the next points.
-</div>
-</div>
+<!------------------->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2024</div><img src='images/CPR/workflow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -77,11 +96,12 @@ Lei Song*, **Chen-Xiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzh
 
 Rui Kong, Chenyang Wu, **Chen-Xiao Gao**, Yang Yu, Zongzhang Zhang
 
-[**Code**](https://github.com/LyndonKong/CPR) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Code**](https://github.com/LyndonKong/CPR) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:W7OEmFMy1HYC'></span></strong>
 - We identify two pain points in offline-to-online reinforcement learning: 1) value overestimation causes fluctuations during learning, and 2) the primacy bias hinders the policy from further improvement.
 - With the proposed Continual Policy Revitalization, we can fine-tune pret-rained policies efficiently and stably.
 </div>
 </div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024</div><img src='images/ReDM/workflow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -99,11 +119,12 @@ Chengxing Jia*, **Chen-Xiao Gao\***, Hao Yin, Fuxiang Zhang, Xiong-Hui Chen, Tia
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAMAS 2024</div><img src='images/ReDA/workflow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+
 [Disentangling Policy from Offline Task Rpresentation Learning via Adversarial Data Augmentation](https://arxiv.org/abs/2403.07261)
 
 Chengxing Jia, Fuxiang Zhang, Yi-Chen Li, **Chen-Xiao Gao**, Xu-Hui Liu, Lei Yuan, Zongzhang Zhang, Yang Yu.
 
-[**Code**](https://github.com/LAMDA-RL/ReDA) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Code**](https://github.com/LAMDA-RL/ReDA) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:zYLM7Y9cAGgC'></span></strong>
 - Learned task representations from previous OMRL methods tend to correlate spuriously with the behavior policy instead of the task. 
 - We disentangle the effect of behavior policies from representation learning by adversarial data augmentation.
 </div>
@@ -116,10 +137,11 @@ Chengxing Jia, Fuxiang Zhang, Yi-Chen Li, **Chen-Xiao Gao**, Xu-Hui Liu, Lei Yua
 
 **Chen-Xiao Gao**, Chenyang Wu, Mingjun Cao, Rui Kong, Zongzhang Zhang, Yang Yu
 
-[**Code**](https://github.com/LAMDA-RL/ACT) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Code**](https://github.com/LAMDA-RL/ACT) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:2osOgNQ5qMEC'></span></strong>
 - We identify failure modes of existing return-conditioned decision-making systems, and suggest to use advantages as the property token for conditional generation.
 </div>
 </div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/GENTLE/workflow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -128,25 +150,11 @@ Chengxing Jia, Fuxiang Zhang, Yi-Chen Li, **Chen-Xiao Gao**, Xu-Hui Liu, Lei Yua
 
 Renzhe Zhou, **Chen-Xiao Gao**, Zongzhang Zhang, Yang Yu
 
-[**Code**](https://github.com/ZRZ-Unknow/GENTLE) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Code**](https://github.com/ZRZ-Unknow/GENTLE) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:zYLM7Y9cAGgC'></span></strong>
 - Real-world RL applications are with data limitations, such as limited tasks and limited behavior diversity. 
 - We develop GENTLE, a simple yet effective task representation learning method to extract generalizable and accurate task representations from offline contextual datasets. 
 </div>
 </div>
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div> -->
-
-<!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
 - *2021.12* National Scholarship
