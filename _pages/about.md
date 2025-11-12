@@ -17,9 +17,11 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a third-year M.Sc. student at Nanjing University, advised by Prof. Zongzhang Zhang. Before starting my M.Sc., I received my B.Sc. degree from Nanjing University in 2022 and interned at ByteDance. 
+I am currently a Ph.D. student at Georgia Institute of Technology, advised by [Prof. Bo Dai](https://bo-dai.github.io/). Before starting my Ph.D., I received my M.Sc. and B.Sc. degree from Nanjing University. 
 
-My research interest lies in offline reinforcement learning (RL). During my M.Sc., I explored various aspects of offline RL, including offline policy optimization, offline model-based RL, and offline meta-RL. Apart from my research focus, I had experience in applied reinforcement learning in the industry, such as Game AI and RLHF for LLMs. Recently, I am interested in leveraging the power of generative models, such as LLMs and diffusion models, to design efficient and scalable RL algorithms. I believe generative models themselves provide an abstract and unified representation to describe the nature, on top of which we can build intelligent decision-making systems. 
+My research focus lies at the intersection of **reinforcement learning (RL)**, **representation learning** and **generative models**. A large proportion of my research is about leveraging the power of generative models to transform the RL pipeline, by using modern architectures and training techniques to improve the efficiency and scalability of RL algorithms. Apart from that, I had industrial experience of using RL to solve real-world problems, such as Game AI design @ [Bytedance](https://www.bytedance.com/) and agentic training for LLMs @ [Moonshot.AI](https://www.moonshot.ai/).
+
+Feel free to contact me if you are interested in my research!
 
 
 # 🔥 News
@@ -38,7 +40,8 @@ My research interest lies in offline reinforcement learning (RL). During my M.Sc
 [Behavior-Regularized Diffusion Policy Optimization for Offline Reinforcement Learning](https://arxiv.org/abs/2502.04778)
 
 **Chen-Xiao Gao**, Chenyang Wu, Mingjun Cao, Chenjun Xiao, Yang Yu, Zongzhang Zhang
-<strong><span class='show_paper_citations' data='1rG07lQAAAAJ:WF5omc3nYNoC'></span></strong>
+
+[**Code**](https://github.com/typoverflow/flow-rl) | [**Project Page**](https://ai.gaocx.io/bdpo)<strong><span class='show_paper_citations' data='1rG07lQAAAAJ:eQOLeE2rZwMC'></span></strong>
 - We Introduce pathwise KL to estimate and control the divergences between two diffusion policies;
 - Leveraging pathwise KL, we propose an actor-critic framework with two-time-scale temporal difference learning to efficiently optimize diffusion policies with behavior regularization.
 </div>
