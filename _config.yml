@@ -21,14 +21,14 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Chen-Xiao Gao"
+  name             : "Chenxiao Gao"
   avatar           : "images/avatar.jpeg"
-  bio              : "M.Sc. student @ Nanjing University, focusing on reinforcement learning."
-  location         : "Nanjing, China"
+  bio              : "Ph.D. student @ Georgia Tech, focusing on reinforcement learning."
+  location         : "Atlanta, GA"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=1rG07lQAAAAJ&hl=en&oi=ao"
-  email            : "typoverflow@outlook.com"
+  email            : "cgao@gatech.edu"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
