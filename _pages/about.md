@@ -160,8 +160,8 @@ Renzhe Zhou, **Chen-Xiao Gao**, Zongzhang Zhang, Yang Yu
 </div>
 
 # 📝 Academic Services
-- Reviewer for conferences: ICML 2025-2026, NeurIPS 2025, ICLR 2025-2026 IJCAI 2025, AAAI 2025-2026, UAI 2025
-- Reviewer for journals: TMLR
+- Reviewer for conferences: **ICML** 2025-2026, **NeurIPS** 2025, **ICLR** 2025-2026, **IJCAI** 2025, **AAAI** 2025-2026, **UAI** 2025
+- Reviewer for journals: **TMLR**
 - Teaching Assistant: [CX4240 - Computing for Data Analysis](https://bo-dai.github.io/CX4240-spring2026/)
 
 # 🎖 Honors and Awards
