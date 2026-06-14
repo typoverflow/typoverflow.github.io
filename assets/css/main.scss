@@ -74,7 +74,7 @@
             max-width: 40%;
             order: 1;
         }
-        
+
         .paper-box-text{
             justify-content: left;
             padding-left: 2em;
@@ -85,6 +85,22 @@
     }
 
 
+}
+
+// Papers without a banner figure: let the text span the full width
+// so entries with and without an image stay visually balanced.
+.paper-box.paper-box--noimg {
+    .paper-box-text {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    @include breakpoint($medium) {
+        .paper-box-text {
+            max-width: 100%;
+            padding-left: 0;
+        }
+    }
 }
 
 $scroll_offset : 2em;
@@ -106,4 +122,15 @@ h1:before, .anchor:before {
     color: white;
     background-color: #00369f;
     font-size: .8em;
+}
+
+// Inline badge for publications shown without a banner figure.
+.badge-inline {
+    display: inline-block;
+    padding: .15em .7em;
+    margin-bottom: .6em;
+    color: white;
+    background-color: #00369f;
+    font-size: .8em;
+    border-radius: 2px;
 }

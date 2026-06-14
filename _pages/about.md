@@ -34,6 +34,71 @@ Feel free to contact me if you are interested in my research!
 
 <!------------------->
 
+<div class='paper-box paper-box--noimg'>
+<div class='paper-box-text' markdown="1">
+
+<span class='badge-inline'>preprint</span>
+
+[FlowRL: A Taxonomy and Modular Framework for Reinforcement Learning with Diffusion Policies](https://arxiv.org/abs/2603.27450)
+
+**Chen-Xiao Gao**, Edward Chen, Tianyi Chen, Bo Dai
+
+[**Code**](https://github.com/typoverflow/flow-rl)
+- We organize the fast-growing landscape of RL with diffusion and flow policies into a unified taxonomy, clarifying the design choices behind existing algorithms.
+- We release a modular, JAX-based toolkit with JIT-compiled training and standardized benchmarks, making algorithms easy to compose, compare, and select across generative-modeling and robotics tasks.
+</div>
+</div>
+
+<!------------------->
+
+<div class='paper-box paper-box--noimg'>
+<div class='paper-box-text' markdown="1">
+
+<span class='badge-inline'>preprint</span>
+
+[GeMPO: Generalized Measure Matching for Online Diffusion Reinforcement Learning](https://arxiv.org/abs/2603.10250)
+
+Haitong Ma, **Chen-Xiao Gao**, Tianyi Chen, Na Li, Bo Dai
+
+[**Code**](https://github.com/typoverflow/flow-rl)
+- We cast online diffusion RL through a measure-matching lens, generalizing the reweighting scheme from softmax to general monotonic functions.
+- By constructing a virtual target policy and minimizing divergence via reweighted flow matching, GeMPO enables flexible weight design and justifies negative reweighting that actively repels the policy from suboptimal actions.
+</div>
+</div>
+
+<!------------------->
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">preprint</div><img src='images/SpectralRL/banner.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Spectral Representation-based Reinforcement Learning](https://arxiv.org/abs/2512.15036)
+
+**Chen-Xiao Gao**, Haotian Sun, Na Li, Dale Schuurmans, Bo Dai
+
+[**Code**](https://github.com/spectral-rl/spectral-rl) | [**Project**](https://spectral-rl.github.io/)
+- We derive spectral representations from a decomposition of the transition operator, yielding an effective abstraction of the system dynamics with a clear theoretical characterization for downstream policy optimization.
+- The framework covers latent-variable and energy-based dynamics, extends to POMDPs, and matches or exceeds strong baselines on 20+ DeepMind Control Suite tasks.
+</div>
+</div>
+
+<!------------------->
+
+<div class='paper-box paper-box--noimg'>
+<div class='paper-box-text' markdown="1">
+
+<span class='badge-inline'>Tech Report</span>
+
+[Kimi K2: Open Agentic Intelligence](https://arxiv.org/abs/2507.20534)
+
+Kimi Team (incl. **Chen-Xiao Gao**)
+
+- Kimi K2 is a 1T-parameter (32B active) mixture-of-experts model trained with the MuonClip optimizer for stable large-scale pre-training, achieving strong agentic and coding results (e.g., 65.8 on SWE-Bench Verified).
+- As part of the Kimi Team during my internship at [Moonshot.AI](https://www.moonshot.ai/), I worked on strengthening the model's interactive tool-use capability across agent scaffolding, supervised fine-tuning, and reinforcement learning.
+</div>
+</div>
+
+<!------------------->
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='images/BDPO/bdpo.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
