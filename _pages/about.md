@@ -41,7 +41,7 @@ Feel free to contact me if you are interested in my research!
 
 [FlowRL: A Taxonomy and Modular Framework for Reinforcement Learning with Diffusion Policies](https://arxiv.org/abs/2603.27450)
 
-**Chen-Xiao Gao**, Edward Chen, Tianyi Chen, Bo Dai
+**Chenxiao Gao**, Edward Chen, Tianyi Chen, Bo Dai
 
 [**Code**](https://github.com/typoverflow/flow-rl)
 - We organize the fast-growing landscape of RL with diffusion and flow policies into a unified taxonomy, clarifying the design choices behind existing algorithms.
@@ -58,7 +58,7 @@ Feel free to contact me if you are interested in my research!
 
 [GeMPO: Generalized Measure Matching for Online Diffusion Reinforcement Learning](https://arxiv.org/abs/2603.10250)
 
-Haitong Ma, **Chen-Xiao Gao**, Tianyi Chen, Na Li, Bo Dai
+Haitong Ma, **Chenxiao Gao**, Tianyi Chen, Na Li, Bo Dai
 
 [**Code**](https://github.com/typoverflow/flow-rl)
 - We cast online diffusion RL through a measure-matching lens, generalizing the reweighting scheme from softmax to general monotonic functions.
@@ -73,7 +73,7 @@ Haitong Ma, **Chen-Xiao Gao**, Tianyi Chen, Na Li, Bo Dai
 
 [Spectral Representation-based Reinforcement Learning](https://arxiv.org/abs/2512.15036)
 
-**Chen-Xiao Gao**, Haotian Sun, Na Li, Dale Schuurmans, Bo Dai
+**Chenxiao Gao**, Haotian Sun, Na Li, Dale Schuurmans, Bo Dai
 
 [**Code**](https://github.com/spectral-rl/spectral-rl) | [**Project**](https://spectral-rl.github.io/)
 - We derive spectral representations from a decomposition of the transition operator, yielding an effective abstraction of the system dynamics with a clear theoretical characterization for downstream policy optimization.
@@ -90,7 +90,7 @@ Haitong Ma, **Chen-Xiao Gao**, Tianyi Chen, Na Li, Bo Dai
 
 [Kimi K2: Open Agentic Intelligence](https://arxiv.org/abs/2507.20534)
 
-Kimi Team (incl. **Chen-Xiao Gao**)
+Kimi Team (incl. **Chenxiao Gao**)
 
 - Kimi K2 is a 1T-parameter (32B active) mixture-of-experts model trained with the MuonClip optimizer for stable large-scale pre-training, achieving strong agentic and coding results (e.g., 65.8 on SWE-Bench Verified).
 - As part of the Kimi Team during my internship at [Moonshot.AI](https://www.moonshot.ai/), I worked on strengthening the model's interactive tool-use capability across agent scaffolding, supervised fine-tuning, and reinforcement learning.
@@ -104,7 +104,7 @@ Kimi Team (incl. **Chen-Xiao Gao**)
 
 [Behavior-Regularized Diffusion Policy Optimization for Offline Reinforcement Learning](https://arxiv.org/abs/2502.04778)
 
-**Chen-Xiao Gao**, Chenyang Wu, Mingjun Cao, Chenjun Xiao, Yang Yu, Zongzhang Zhang
+**Chenxiao Gao**, Chenyang Wu, Mingjun Cao, Chenjun Xiao, Yang Yu, Zongzhang Zhang
 
 [**Code**](https://github.com/typoverflow/flow-rl) | [**Project Page**](https://ai.gaocx.io/bdpo)<strong><span class='show_paper_citations' data='1rG07lQAAAAJ:eQOLeE2rZwMC'></span></strong>
 - We Introduce pathwise KL to estimate and control the divergences between two diffusion policies;
@@ -118,7 +118,7 @@ Kimi Team (incl. **Chen-Xiao Gao**)
 
 [Reinforced In-Context Black-Box Optimization](https://arxiv.org/abs/2402.17423)
 
-Lei Song*, **Chen-Xiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzhang Zhang, Chao Qian
+Lei Song*, **Chenxiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzhang Zhang, Chao Qian
 
 [**Code**](https://github.com/songlei00/RIBBO) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:_FxGoFyzp5QC'></span></strong>
 - RIBBO distills and reinforces existing black-box optimization algorithms by fitting regret augmented learning histories of the behavior algorithms.
@@ -134,7 +134,7 @@ Lei Song*, **Chen-Xiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzh
 [Diffusion Spectral Representation for Reinforcement Learning
 ](https://arxiv.org/abs/2406.16121)
 
-**Chen-Xiao Gao\***, Dmitry Shribak*, Yitong Li, Chenjun Xiao, Bo Dai
+**Chenxiao Gao\***, Dmitry Shribak*, Yitong Li, Chenjun Xiao, Bo Dai
 
 [**Code**](https://github.com/haotiansun14/rl-rep) | [**Project**](https://haotiansun14.github.io/rl-rep-page/)<strong><span class='show_paper_citations' data='1rG07lQAAAAJ:eQOLeE2rZwMC'></span></strong>
 - We leverages the flexibility of diffusion models and extract spectral representations (Diff-SR) that capture the dynamics structure.
@@ -147,7 +147,7 @@ Lei Song*, **Chen-Xiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzh
 
 [Hindsight Preference Learning for Offline Preference-based Reinforcement Learning](https://arxiv.org/abs/2407.04451)
 
-**Chen-Xiao Gao**, Shengjun Fang, Chenjun Xiao, Yang Yu, Zongzhang Zhang
+**Chenxiao Gao**, Shengjun Fang, Chenjun Xiao, Yang Yu, Zongzhang Zhang
 
 [**Code**](https://github.com/typoverflow/WiseRL) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:Y0pCki6q_DkC'></span></strong>
 - We identified shortages of the widely used preference modeling method in existing PbRL settings.
@@ -162,7 +162,7 @@ Lei Song*, **Chen-Xiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzh
 
 [Efficient and Stable Offline-to-online Reinforcement Learning via Continual Policy Revitalization](https://www.ijcai.org/proceedings/2024/477)
 
-Rui Kong, Chenyang Wu, **Chen-Xiao Gao**, Yang Yu, Zongzhang Zhang
+Rui Kong, Chenyang Wu, **Chenxiao Gao**, Yang Yu, Zongzhang Zhang
 
 [**Code**](https://github.com/LyndonKong/CPR) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:W7OEmFMy1HYC'></span></strong>
 - We identify two pain points in offline-to-online reinforcement learning: 1) value overestimation causes fluctuations during learning, and 2) the primacy bias hinders the policy from further improvement.
@@ -176,7 +176,7 @@ Rui Kong, Chenyang Wu, **Chen-Xiao Gao**, Yang Yu, Zongzhang Zhang
 
 [Policy Rehearsing: Training Generalizable Policies for Reinforcement Learning](https://openreview.net/pdf?id=m3xVPaZp6Z)
 
-Chengxing Jia*, **Chen-Xiao Gao\***, Hao Yin, Fuxiang Zhang, Xiong-Hui Chen, Tian Xu, Lei Yuan, Zongzhang Zhang, Yang Yu, Zhi-Hua Zhou
+Chengxing Jia*, **Chenxiao Gao\***, Hao Yin, Fuxiang Zhang, Xiong-Hui Chen, Tian Xu, Lei Yuan, Zongzhang Zhang, Yang Yu, Zhi-Hua Zhou
 
 <!-- [**Code**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
 - We explore the idea of *rehearsal* for offline reinforcement learning, which generates diverse while eligible dynamics models using extremely limited amount of data and optimizes an contextual policy with the generated models. 
@@ -190,7 +190,7 @@ Chengxing Jia*, **Chen-Xiao Gao\***, Hao Yin, Fuxiang Zhang, Xiong-Hui Chen, Tia
 
 [Disentangling Policy from Offline Task Rpresentation Learning via Adversarial Data Augmentation](https://arxiv.org/abs/2403.07261)
 
-Chengxing Jia, Fuxiang Zhang, Yi-Chen Li, **Chen-Xiao Gao**, Xu-Hui Liu, Lei Yuan, Zongzhang Zhang, Yang Yu.
+Chengxing Jia, Fuxiang Zhang, Yi-Chen Li, **Chenxiao Gao**, Xu-Hui Liu, Lei Yuan, Zongzhang Zhang, Yang Yu.
 
 [**Code**](https://github.com/LAMDA-RL/ReDA) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:zYLM7Y9cAGgC'></span></strong>
 - Learned task representations from previous OMRL methods tend to correlate spuriously with the behavior policy instead of the task. 
@@ -203,7 +203,7 @@ Chengxing Jia, Fuxiang Zhang, Yi-Chen Li, **Chen-Xiao Gao**, Xu-Hui Liu, Lei Yua
 
 [ACT: Empowering Decision Transformer with Dynamic Programming via Advantage Conditioning](https://ojs.aaai.org/index.php/AAAI/article/view/29101/30081)
 
-**Chen-Xiao Gao**, Chenyang Wu, Mingjun Cao, Rui Kong, Zongzhang Zhang, Yang Yu
+**Chenxiao Gao**, Chenyang Wu, Mingjun Cao, Rui Kong, Zongzhang Zhang, Yang Yu
 
 [**Code**](https://github.com/LAMDA-RL/ACT) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:2osOgNQ5qMEC'></span></strong>
 - We identify failure modes of existing return-conditioned decision-making systems, and suggest to use advantages as the property token for conditional generation.
@@ -216,7 +216,7 @@ Chengxing Jia, Fuxiang Zhang, Yi-Chen Li, **Chen-Xiao Gao**, Xu-Hui Liu, Lei Yua
 
 [Generalizable Task Representation Learning for Offline Meta-Reinforcement Learning with Data Limitations](https://ojs.aaai.org/index.php/AAAI/article/view/29658/31121)
 
-Renzhe Zhou, **Chen-Xiao Gao**, Zongzhang Zhang, Yang Yu
+Renzhe Zhou, **Chenxiao Gao**, Zongzhang Zhang, Yang Yu
 
 [**Code**](https://github.com/ZRZ-Unknow/GENTLE) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:zYLM7Y9cAGgC'></span></strong>
 - Real-world RL applications are with data limitations, such as limited tasks and limited behavior diversity. 
