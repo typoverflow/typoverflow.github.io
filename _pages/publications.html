@@ -1,0 +1,56 @@
+---
+layout: profile
+permalink: /publications/
+title: Publications
+excerpt: "Publications by Chenxiao Gao on reinforcement learning, representation learning, generative models, and agents."
+publication_page: true
+redirect_from:
+  - /publications.html
+---
+{% assign years = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}
+{% assign topics = site.data.publications | map: 'tags' | join: '|' | split: '|' | uniq %}
+<div class="publication-layout">
+  <div class="publication-main">
+    <h1 class="publication-heading">Publications</h1>
+    <div class="publication-filter" hidden>
+      <div class="publication-chips" role="group" aria-label="Filter publications by topic">
+        <button type="button" class="topic-chip" data-topic="all" aria-pressed="true">All <span class="topic-count">{{ site.data.publications.size }}</span></button>
+        {% for topic in topics %}
+        <button type="button" class="topic-chip" data-topic="{{ topic | escape }}" aria-pressed="false">{{ topic }} <span class="topic-count"></span></button>
+        {% endfor %}
+      </div>
+      <div class="filter-status"><span id="publication-status" role="status" aria-live="polite"></span><button type="button" class="filter-clear" hidden>Clear filters</button></div>
+    </div>
+    <div class="publication-list">
+      {% for year in years %}
+      <section class="publication-group" data-year="{{ year.name }}" aria-labelledby="year-{{ year.name }}">
+        <h2 class="publication-year" id="year-{{ year.name }}">{{ year.name }}</h2>
+        {% for paper in year.items %}
+        <article class="publication-card" id="{{ paper.id }}" data-topics="{{ paper.tags | join: '|' | escape }}">
+          <h3 class="publication-title"><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
+          <p class="publication-venue{% if paper.venue == 'Preprint' %} is-preprint{% endif %}">{{ paper.venue }}</p>
+          <p class="publication-authors">{{ paper.authors }}</p>
+          <div class="publication-foot">
+            <div class="publication-links">
+              <a class="publication-link" href="{{ paper.url }}">{% if paper.url contains 'arxiv.org' %}Preprint{% else %}Paper{% endif %}</a>
+              {% for link in paper.links %}<a class="publication-link" href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+            </div>
+            <details class="publication-summary">
+              <summary>Summary</summary>
+              <ul>{{ paper.summary }}</ul>
+              {% if paper.image %}<img src="{{ paper.image | relative_url }}" alt="{{ paper.title | escape }} — method overview" loading="lazy">{% endif %}
+            </details>
+            <div class="publication-topics" aria-label="Research topics">
+              {% for topic in paper.tags %}<button type="button" class="paper-topic" data-topic="{{ topic | escape }}" aria-pressed="false" disabled>{{ topic }}</button>{% endfor %}
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+      </section>
+      {% endfor %}
+    </div>
+  </div>
+  <nav class="publication-years" aria-label="Publication years">
+    {% for year in years %}<a href="#year-{{ year.name }}" data-year="{{ year.name }}">{{ year.name }}</a>{% endfor %}
+  </nav>
+</div>

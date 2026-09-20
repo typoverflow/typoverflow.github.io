@@ -1,0 +1,97 @@
+:root {
+  color-scheme: light;
+  --ink: #212529;
+  --muted: #606870;
+  --link: #0069d9;
+  --line: #e9ecef;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { margin: 0; padding-top: 80px; background: #f8f9fa; color: var(--ink); font: 16px/1.5 "Lato", Arial, sans-serif; }
+a { color: var(--link); text-decoration: none; }
+a:hover { color: #004b9b; text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; border-radius: 2px; }
+p { margin: 0 0 16px; }
+ul { margin: 0; padding-left: 20px; }
+li + li { margin-top: 6px; }
+h1 { font-size: 40px; line-height: 1.2; font-weight: 400; margin: 0 0 8px; }
+h2 { font-size: 18px; line-height: 1.4; margin: 0 0 20px; }
+.container { width: calc(100% - 40px); max-width: 1110px; margin-inline: auto; }
+.site-header { position: fixed; inset: 0 0 auto; z-index: 10; background: rgba(248,249,250,.97); box-shadow: 0 2px 4px #00000013; }
+.navigation { min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { font-size: 20px; font-weight: 700; color: var(--ink); }
+.nav-links { display: flex; gap: 24px; }
+.nav-links a { color: var(--muted); padding-block: 16px; }
+.nav-links a:hover { color: var(--ink); }
+.card { background: #fff; border-radius: 4px; box-shadow: 0 2px 4px #00000013; margin-bottom: 18px; }
+.profile-card { padding: 48px; display: flow-root; }
+.profile-card > ul { margin-bottom: 16px; }
+.portrait { float: right; width: 200px; height: 200px; object-fit: cover; padding: 4px; border: 1px solid #dee2e6; border-radius: 4px; margin: 0 0 24px 32px; }
+.affiliation { margin-bottom: 24px; }
+.profile-links { clear: both; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; border-top: 1px solid var(--line); margin-top: 24px; padding-top: 18px; font-size: 14px; }
+.inline-logo { width: 20px; height: 20px; object-fit: contain; vertical-align: -4px; margin-right: 4px; }
+.last-updated { margin-left: auto; color: var(--muted); font-size: 13px; }
+@font-face { font-family: "Profile Solid"; src: url('../fonts/fa-solid-900.woff2') format('woff2'); font-display: block; }
+@font-face { font-family: "Profile Brands"; src: url('../fonts/fa-brands-400.woff2') format('woff2'); font-display: block; }
+@font-face { font-family: "Profile Academic"; src: url('../fonts/academicons.woff') format('woff'); font-display: block; }
+.contact-icon { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 36px; font-size: 21px; }
+.icon { font-family: "Profile Solid"; font-style: normal; line-height: 1; }
+.icon-email::before { content: "\f0e0"; }
+.icon-cv::before { content: "\f1c1"; }
+.icon-github, .icon-linkedin { font-family: "Profile Brands"; }
+.icon-github::before { content: "\f09b"; }
+.icon-linkedin::before { content: "\f08c"; }
+.icon-x { width: 20px; height: 20px; fill: currentColor; }
+.icon-scholar { font-family: "Profile Academic"; }
+.icon-scholar::before { content: "\e828"; }
+.background-card { padding: 32px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; }
+.institution-column { display: flex; flex-direction: column; min-width: 0; }
+.background-card h2 { font-size: 16px; line-height: 1.2; margin: 0 0 14px; }
+.institution-list { display: grid; grid-template-rows: repeat(3, minmax(min-content, 1fr)); gap: 16px; flex: 1; }
+.institution-item { display: flex; align-items: flex-start; gap: 10px; min-width: 0; }
+.institution-logo { flex: 0 0 40px; width: 40px; height: 44px; margin-top: 4px; object-fit: contain; object-position: center top; }
+#experience .institution-logo { flex-basis: 18px; width: 18px; height: 22px; }
+.institution-details { flex: 1; min-width: 0; }
+.institution-name { font-size: 16px; font-weight: 700; }
+#-educations .institution-description, .institution-role > span { font-style: italic; }
+.institution-description, .institution-date, .institution-role { font-size: 12.8px; line-height: 1.5; }
+.institution-date { white-space: nowrap; }
+.institution-role { display: flex; flex-wrap: wrap; justify-content: space-between; column-gap: 12px; }
+.institution-role .institution-date { margin-left: auto; }
+.service-card, .news-card { padding: 0; font-size: 16px; }
+.service-card h2, .news-card h2 { margin: 0; padding: 16px; font-size: 16px; line-height: 1.2; border-bottom: 1px solid #dee2e6; }
+.service-card h2::before, .news-card h2::before { font-family: "Profile Solid"; font-weight: normal; margin-right: 4px; }
+.service-card h2::before { content: "\f4fe"; }
+.news-card h2::before { content: "\f09e"; }
+.service-card ul { list-style: none; margin: 0; padding: 0 16px 4px; }
+.service-card li { margin: 0; padding: 8px 0; }
+.service-card li + li { border-top: 1px solid #dee2e6; }
+.news-body { padding: 0 16px 4px; }
+.news-year-group { display: flex; align-items: flex-start; gap: 16px; padding: 4px 0; border-top: 1px solid #dee2e6; }
+.news-year { margin: 4px 0; color: #6c757d; flex: 0 0 auto; }
+.news-items { list-style: none; padding: 0; margin: 0; flex: 1; min-width: 0; }
+.news-item { display: flex; gap: 16px; margin: 4px 0; font-weight: 400; }
+.news-item + .news-item { margin-top: 4px; }
+.news-item > div { min-width: 0; }
+.news-item time { margin-left: auto; align-self: flex-end; color: #6c757d; font-style: italic; white-space: nowrap; flex-shrink: 0; }
+.news-emoji { width: 1em; height: 1em; vertical-align: -0.1em; }
+.site-footer { padding: 14px 0 32px; display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); }
+.skip-link { position: fixed; top: -60px; left: 16px; padding: 10px; background: white; z-index: 20; }
+.skip-link:focus { top: 8px; }
+@media (max-width: 767px) {
+  body { padding-top: 76px; }
+  .container { width: calc(100% - 28px); }
+  .profile-card { padding: 24px; }
+  h1 { font-size: 30px; }
+  .portrait { width: 72px; height: 72px; border-radius: 50%; margin: 0 0 16px 16px; }
+  .affiliation { font-size: 14px; }
+  .profile-links { gap: 12px 18px; }
+  .last-updated { width: 100%; text-align: right; }
+  .background-card { grid-template-columns: 1fr; gap: 24px; }
+  .background-card { padding: 24px; }
+  .institution-list { grid-template-rows: none; gap: 16px; }
+  .news-year-group, .news-item { gap: 10px; }
+  .nav-links { gap: 16px; font-size: 14px; }
+  .brand { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

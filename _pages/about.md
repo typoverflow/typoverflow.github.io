@@ -1,246 +1,124 @@
 ---
+layout: profile
+last_updated: 2026-09-20
 permalink: /
-title: ""
-excerpt: ""
-author_profile: true
-redirect_from: 
+title: "Chenxiao Gao"
+excerpt: "Ph.D. student at Georgia Tech researching reinforcement learning, representation learning, and generative models."
+redirect_from:
   - /about/
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+<section class="card profile-card" id="about-me" markdown="1">
+<img class="portrait" src="{{ site.author.avatar | relative_url }}" alt="Portrait of {{ site.author.name }}" width="200" height="200">
+<h1>{{ site.author.name }}</h1>
+<p class="affiliation"><img class="inline-logo" src="{{ '/images/logos/georgia-tech.svg' | relative_url }}" alt=""> Georgia Institute of Technology</p>
 
-<span class='anchor' id='about-me'></span>
+I am a Machine Learning Ph.D. student at Georgia Institute of Technology, advised by [Prof. Bo Dai](https://bo-dai.github.io/). I am fortunate to collaborate with [Prof. Na Li](https://nali.seas.harvard.edu/) and the students in her group at Harvard University. Before starting my Ph.D., I received my bachelor's and master's degrees from Nanjing University, where I conducted research in the [LAMDA group](https://www.lamda.nju.edu.cn/).
 
-I am currently a Ph.D. student at Georgia Institute of Technology, advised by [Prof. Bo Dai](https://bo-dai.github.io/). Before starting my Ph.D., I received my M.Sc. and B.Sc. degree from Nanjing University. 
+My research focuses on **reinforcement learning (RL)** and **generative modeling**, with applications to **LLM agents** and **robotics**. My work spans three directions:
 
-My research focus lies at the intersection of **reinforcement learning (RL)**, **representation learning** and **generative models**. A large proportion of my research is about leveraging the power of generative models to transform the RL pipeline, by using modern architectures and training techniques to improve the efficiency and scalability of RL algorithms. Apart from that, I had industrial experience of using RL to solve real-world problems, such as Game AI design @ [Bytedance](https://www.bytedance.com/) and agentic training for LLMs @ [Moonshot.AI](https://www.moonshot.ai/).
+- **Efficient reinforcement learning:** Developing RL algorithms that improve efficiency through self-supervised learning and advances in generative model architectures.
+- **Generative models and agents for robotics:** Developing foundational generative models and agentic systems for robotic learning and decision-making.
+- **LLM and agent post-training:** Designing efficient post-training algorithms for large language models and interactive agents.
 
 Feel free to contact me if you are interested in my research!
 
-
-# 🔥 News
-- *2025.05*: &nbsp;🎉🎉 BDPO is accepted by ICML 2025!
-- *2025.05*: &nbsp;🎉🎉 RIBBO is accepted by IJCAI 2025!
-- *2024.09*: &nbsp;🎉🎉 DiffSR is accepted by NeurIPS 2024!
-- *2024.03*: &nbsp;🎉🎉 ReDM is accepted by ICLR 2024!
-
-# 📝 Publications 
-
-<!------------------->
-
-<div class='paper-box paper-box--noimg'>
-<div class='paper-box-text' markdown="1">
-
-<span class='badge-inline'>preprint</span>
-
-[FlowRL: A Taxonomy and Modular Framework for Reinforcement Learning with Diffusion Policies](https://arxiv.org/abs/2603.27450)
-
-**Chenxiao Gao**, Edward Chen, Tianyi Chen, Bo Dai
-
-[**Code**](https://github.com/typoverflow/flow-rl)
-- We organize the fast-growing landscape of RL with diffusion and flow policies into a unified taxonomy, clarifying the design choices behind existing algorithms.
-- We release a modular, JAX-based toolkit with JIT-compiled training and standardized benchmarks, making algorithms easy to compose, compare, and select across generative-modeling and robotics tasks.
+<div class="profile-links">
+  <a class="contact-icon" href="mailto:{{ site.author.email }}" aria-label="Email: {{ site.author.email }}" title="{{ site.author.email }}"><span class="icon icon-email" aria-hidden="true"></span></a>
+  <a class="contact-icon" href="{{ site.author.googlescholar }}" aria-label="Google Scholar" title="Google Scholar"><span class="icon icon-scholar" aria-hidden="true"></span></a>
+  <a class="contact-icon" href="https://github.com/{{ site.author.github }}" aria-label="GitHub" title="GitHub"><span class="icon icon-github" aria-hidden="true"></span></a>
+  <a class="contact-icon" href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" aria-label="LinkedIn" title="LinkedIn"><span class="icon icon-linkedin" aria-hidden="true"></span></a>
+  <a class="contact-icon" href="https://x.com/{{ site.author.twitter }}" aria-label="X: @{{ site.author.twitter }}" title="X: @{{ site.author.twitter }}"><svg class="icon-x" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg></a>
+  <a class="contact-icon" href="{{ '/cv.pdf' | relative_url }}" aria-label="Curriculum vitae (PDF)" title="CV (PDF)"><span class="icon icon-cv" aria-hidden="true"></span></a>
+  <span class="last-updated">Last updated on <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: '%Y-%m' }}</time></span>
 </div>
+</section>
+
+<div class="card background-card">
+<section class="institution-column" id="-educations" aria-labelledby="education-heading">
+<h2 id="education-heading">Education</h2>
+<div class="institution-list">
+  <div class="institution-item">
+    <img class="institution-logo" src="{{ '/images/logos/georgia-tech.svg' | relative_url }}" alt="Georgia Tech logo">
+    <div class="institution-details">
+      <div class="institution-name">Georgia Institute of Technology</div>
+      <div class="institution-date"><em>Present</em></div>
+      <div class="institution-description">ML Ph.D. student</div>
+    </div>
+  </div>
+  <div class="institution-item">
+    <img class="institution-logo" src="{{ '/images/logos/nanjing-university.svg' | relative_url }}" alt="Nanjing University logo">
+    <div class="institution-details">
+      <div class="institution-name">Nanjing University</div>
+      <div class="institution-date"><em>2022 – 2025</em></div>
+      <div class="institution-description">M.Sc. in Computer Science</div>
+    </div>
+  </div>
+  <div class="institution-item">
+    <img class="institution-logo" src="{{ '/images/logos/nanjing-university.svg' | relative_url }}" alt="Nanjing University logo">
+    <div class="institution-details">
+      <div class="institution-name">Nanjing University</div>
+      <div class="institution-date"><em>2018 – 2022</em></div>
+      <div class="institution-description">B.Sc. in Computer Science</div>
+    </div>
+  </div>
 </div>
-
-<!------------------->
-
-<div class='paper-box paper-box--noimg'>
-<div class='paper-box-text' markdown="1">
-
-<span class='badge-inline'>preprint</span>
-
-[GeMPO: Generalized Measure Matching for Online Diffusion Reinforcement Learning](https://arxiv.org/abs/2603.10250)
-
-Haitong Ma, **Chenxiao Gao**, Tianyi Chen, Na Li, Bo Dai
-
-[**Code**](https://github.com/typoverflow/flow-rl)
-- We cast online diffusion RL through a measure-matching lens, generalizing the reweighting scheme from softmax to general monotonic functions.
-- By constructing a virtual target policy and minimizing divergence via reweighted flow matching, GeMPO enables flexible weight design and justifies negative reweighting that actively repels the policy from suboptimal actions.
+</section>
+<section class="institution-column" id="experience" aria-labelledby="experience-heading">
+<h2 id="experience-heading">Experience</h2>
+<div class="institution-list">
+  <div class="institution-item">
+    <img class="institution-logo" src="{{ '/images/logos/harvard.png' | relative_url }}" alt="Harvard University logo">
+    <div class="institution-details">
+      <div class="institution-name">Harvard University</div>
+      <div class="institution-role"><span>Research Fellow</span><em class="institution-date">Jun. 2026 – Present</em></div>
+      <div class="institution-description">Foundation models and agentic systems for robotics</div>
+    </div>
+  </div>
+  <div class="institution-item">
+    <img class="institution-logo" src="{{ '/images/logos/moonshot.svg' | relative_url }}" alt="Moonshot AI logo">
+    <div class="institution-details">
+      <div class="institution-name">Moonshot.AI</div>
+      <div class="institution-role"><span>Research Intern</span><em class="institution-date">Jun. – Aug. 2025</em></div>
+      <div class="institution-description">Agentic RL for Kimi-K2</div>
+    </div>
+  </div>
+  <div class="institution-item">
+    <img class="institution-logo" src="{{ '/images/logos/bytedance.png' | relative_url }}" alt="ByteDance logo">
+    <div class="institution-details">
+      <div class="institution-name">ByteDance</div>
+      <div class="institution-role"><span>Research Intern</span><em class="institution-date">Jul. – Nov. 2021</em></div>
+      <div class="institution-description">Reinforcement learning for Game AI</div>
+    </div>
+  </div>
 </div>
-</div>
-
-<!------------------->
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">preprint</div><img src='images/SpectralRL/banner.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Spectral Representation-based Reinforcement Learning](https://arxiv.org/abs/2512.15036)
-
-**Chenxiao Gao**, Haotian Sun, Na Li, Dale Schuurmans, Bo Dai
-
-[**Code**](https://github.com/spectral-rl/spectral-rl) | [**Project**](https://spectral-rl.github.io/)
-- We derive spectral representations from a decomposition of the transition operator, yielding an effective abstraction of the system dynamics with a clear theoretical characterization for downstream policy optimization.
-- The framework covers latent-variable and energy-based dynamics, extends to POMDPs, and matches or exceeds strong baselines on 20+ DeepMind Control Suite tasks.
-</div>
-</div>
-
-<!------------------->
-
-<div class='paper-box paper-box--noimg'>
-<div class='paper-box-text' markdown="1">
-
-<span class='badge-inline'>Tech Report</span>
-
-[Kimi K2: Open Agentic Intelligence](https://arxiv.org/abs/2507.20534)
-
-Kimi Team (incl. **Chenxiao Gao**)
-
-- Kimi K2 is a 1T-parameter (32B active) mixture-of-experts model trained with the MuonClip optimizer for stable large-scale pre-training, achieving strong agentic and coding results (e.g., 65.8 on SWE-Bench Verified).
-- As part of the Kimi Team during my internship at [Moonshot.AI](https://www.moonshot.ai/), I worked on strengthening the model's interactive tool-use capability across agent scaffolding, supervised fine-tuning, and reinforcement learning.
-</div>
+</section>
 </div>
 
-<!------------------->
+<section class="card service-card" id="-academic-services" markdown="1">
+## Academic Service
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025</div><img src='images/BDPO/bdpo.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Behavior-Regularized Diffusion Policy Optimization for Offline Reinforcement Learning](https://arxiv.org/abs/2502.04778)
-
-**Chenxiao Gao**, Chenyang Wu, Mingjun Cao, Chenjun Xiao, Yang Yu, Zongzhang Zhang
-
-[**Code**](https://github.com/typoverflow/flow-rl) | [**Project Page**](https://ai.gaocx.io/bdpo)<strong><span class='show_paper_citations' data='1rG07lQAAAAJ:eQOLeE2rZwMC'></span></strong>
-- We Introduce pathwise KL to estimate and control the divergences between two diffusion policies;
-- Leveraging pathwise KL, we propose an actor-critic framework with two-time-scale temporal difference learning to efficiently optimize diffusion policies with behavior regularization.
-</div>
-</div>
-
-<!------------------->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/RIBBO/workflow.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Reinforced In-Context Black-Box Optimization](https://arxiv.org/abs/2402.17423)
-
-Lei Song*, **Chenxiao Gao\***, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzhang Zhang, Chao Qian
-
-[**Code**](https://github.com/songlei00/RIBBO) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:_FxGoFyzp5QC'></span></strong>
-- RIBBO distills and reinforces existing black-box optimization algorithms by fitting regret augmented learning histories of the behavior algorithms.
-- By specifying a suitable regret-to-go, RIBBO generate better query decisions by auto-regressively predicting the next points.
-</div>
-</div>
-
-<!------------------->
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2024</div><img src='images/Diff-SR/diffusion.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Diffusion Spectral Representation for Reinforcement Learning
-](https://arxiv.org/abs/2406.16121)
-
-**Chenxiao Gao\***, Dmitry Shribak*, Yitong Li, Chenjun Xiao, Bo Dai
-
-[**Code**](https://github.com/haotiansun14/rl-rep) | [**Project**](https://haotiansun14.github.io/rl-rep-page/)<strong><span class='show_paper_citations' data='1rG07lQAAAAJ:eQOLeE2rZwMC'></span></strong>
-- We leverages the flexibility of diffusion models and extract spectral representations (Diff-SR) that capture the dynamics structure.
-- Diff-SR is able to represent the value function of any policy sufficiently, paving the way for efficient planning and exploration for downstream RL optimization. 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">preprint</div><img src='images/HPL/workflow.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Hindsight Preference Learning for Offline Preference-based Reinforcement Learning](https://arxiv.org/abs/2407.04451)
-
-**Chenxiao Gao**, Shengjun Fang, Chenjun Xiao, Yang Yu, Zongzhang Zhang
-
-[**Code**](https://github.com/typoverflow/WiseRL) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:Y0pCki6q_DkC'></span></strong>
-- We identified shortages of the widely used preference modeling method in existing PbRL settings.
-- HPL leverages the vast unlabeled dataset to facilitate credit assignment, providing robust and advantageous rewards for downsteam RL optimization.
-</div>
-</div>
-
-<!------------------->
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2024</div><img src='images/CPR/workflow.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Efficient and Stable Offline-to-online Reinforcement Learning via Continual Policy Revitalization](https://www.ijcai.org/proceedings/2024/477)
-
-Rui Kong, Chenyang Wu, **Chenxiao Gao**, Yang Yu, Zongzhang Zhang
-
-[**Code**](https://github.com/LyndonKong/CPR) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:W7OEmFMy1HYC'></span></strong>
-- We identify two pain points in offline-to-online reinforcement learning: 1) value overestimation causes fluctuations during learning, and 2) the primacy bias hinders the policy from further improvement.
-- With the proposed Continual Policy Revitalization, we can fine-tune pret-rained policies efficiently and stably.
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2024</div><img src='images/ReDM/workflow.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Policy Rehearsing: Training Generalizable Policies for Reinforcement Learning](https://openreview.net/pdf?id=m3xVPaZp6Z)
-
-Chengxing Jia*, **Chenxiao Gao\***, Hao Yin, Fuxiang Zhang, Xiong-Hui Chen, Tian Xu, Lei Yuan, Zongzhang Zhang, Yang Yu, Zhi-Hua Zhou
-
-<!-- [**Code**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong> -->
-- We explore the idea of *rehearsal* for offline reinforcement learning, which generates diverse while eligible dynamics models using extremely limited amount of data and optimizes an contextual policy with the generated models. 
-- By recognizing the context, the policy is able to generalize to the environment at hand during the online stage. 
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAMAS 2024</div><img src='images/ReDA/workflow.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-
-[Disentangling Policy from Offline Task Rpresentation Learning via Adversarial Data Augmentation](https://arxiv.org/abs/2403.07261)
-
-Chengxing Jia, Fuxiang Zhang, Yi-Chen Li, **Chenxiao Gao**, Xu-Hui Liu, Lei Yuan, Zongzhang Zhang, Yang Yu.
-
-[**Code**](https://github.com/LAMDA-RL/ReDA) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:zYLM7Y9cAGgC'></span></strong>
-- Learned task representations from previous OMRL methods tend to correlate spuriously with the behavior policy instead of the task. 
-- We disentangle the effect of behavior policies from representation learning by adversarial data augmentation.
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/ACT/arch.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[ACT: Empowering Decision Transformer with Dynamic Programming via Advantage Conditioning](https://ojs.aaai.org/index.php/AAAI/article/view/29101/30081)
-
-**Chenxiao Gao**, Chenyang Wu, Mingjun Cao, Rui Kong, Zongzhang Zhang, Yang Yu
-
-[**Code**](https://github.com/LAMDA-RL/ACT) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:2osOgNQ5qMEC'></span></strong>
-- We identify failure modes of existing return-conditioned decision-making systems, and suggest to use advantages as the property token for conditional generation.
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/GENTLE/workflow.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Generalizable Task Representation Learning for Offline Meta-Reinforcement Learning with Data Limitations](https://ojs.aaai.org/index.php/AAAI/article/view/29658/31121)
-
-Renzhe Zhou, **Chenxiao Gao**, Zongzhang Zhang, Yang Yu
-
-[**Code**](https://github.com/ZRZ-Unknow/GENTLE) <strong><span class='show_paper_citations' data='1rG07lQAAAAJ:zYLM7Y9cAGgC'></span></strong>
-- Real-world RL applications are with data limitations, such as limited tasks and limited behavior diversity. 
-- We develop GENTLE, a simple yet effective task representation learning method to extract generalizable and accurate task representations from offline contextual datasets. 
-</div>
-</div>
-
-# 📝 Academic Services
-- Reviewer for conferences: **ICML** 2025-2026, **NeurIPS** 2025, **ICLR** 2025-2026, **IJCAI** 2025, **AAAI** 2025-2026, **UAI** 2025
-- Reviewer for journals: **TMLR**
+- Reviewer for conferences: ICML 2025-2026, NeurIPS 2025, ICLR 2025-2026, IJCAI 2025, AAAI 2025-2026, UAI 2025
+- Reviewer for journals: TMLR
 - Teaching Assistant: [CX4240 - Computing for Data Analysis](https://bo-dai.github.io/CX4240-spring2026/)
 
-# 🎖 Honors and Awards
-- *2021.12* National Scholarship
-- *2020.10* Chow Tai Fook Scholarship
-- *2020.10* People's Scholarship of Nanjing University
-
-# 📖 Educations
-- *2022.09 - now*, Computer Science, Nanjing University
-- *2018.09 - 2022.06*, Computer Science, Nanjing University
-
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
-
-<!-- # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
+</section>
+<section class="card news-card" id="-news" aria-labelledby="news-heading">
+<h2 id="news-heading">News</h2>
+<div class="news-body">
+  <div class="news-year-group">
+    <div class="news-year">2026</div>
+    <ul class="news-items">
+      <li class="news-item">
+        <div><img class="news-emoji" src="{{ '/images/emoji/party-popper.svg' | relative_url }}" alt="🎉"> We released <a href="https://rle-bench.github.io/">RLE-Bench</a>, a benchmark evaluating coding agents as robot learning engineers. Read our <a href="https://rle-bench.github.io/blog/">research blog</a> and the <a href="https://seas.harvard.edu/news/can-your-ai-engineer-robot">Harvard SEAS news coverage</a>.</div>
+        <time datetime="2026-09">Sep</time>
+      </li>
+      <li class="news-item">
+        <div><img class="news-emoji" src="{{ '/images/emoji/round-pushpin.svg' | relative_url }}" alt="📍"> I moved to Boston and joined <a href="https://nali.seas.harvard.edu/">Prof. Na Li’s group</a> at Harvard University as a Research Fellow!</div>
+        <time datetime="2026-05">May</time>
+      </li>
+    </ul>
+  </div>
+</div>
+</section>

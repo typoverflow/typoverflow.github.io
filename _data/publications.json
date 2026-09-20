@@ -1,0 +1,311 @@
+[
+  {
+    "id": "dagger-llm-agents",
+    "year": 2026,
+    "title": "Revisiting DAgger in the Era of LLM-Agents",
+    "url": "https://arxiv.org/abs/2605.12913",
+    "venue": "Preprint",
+    "authors": "Changhao Li, Rushi Qiang, Jiawei Huang, <strong>Chenxiao Gao</strong>, Chao Zhang, Niao He, Bo Dai",
+    "links": [],
+    "summary": "<li>We revisit DAgger for multi-turn language-model agents, combining student–teacher rollouts with teacher-provided supervision to address covariate shift while retaining dense learning signals.</li>\n<li>On SWE-bench Verified, this approach improves over the strongest post-training baseline by 3.9 points for 4B models and 3.6 points for 8B models.</li>",
+    "image": null,
+    "tags": [
+      "LLM",
+      "Agent",
+      "Imitation Learning"
+    ]
+  },
+  {
+    "id": "edo",
+    "year": 2026,
+    "title": "Exploration-Driven Optimization for Test-Time Large Language Model Reasoning",
+    "url": "https://openreview.net/forum?id=NiINDlzvNj",
+    "venue": "TMLR 2026",
+    "authors": "Changhao Li, Yuchen Zhuang, <strong>Chenxiao Gao</strong>, Haotian Sun, Rushi Qiang, Chao Zhang, Bo Dai",
+    "links": [
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2605.09853"
+      }
+    ],
+    "summary": "<li>Exploration-Driven Optimization (EDO) incorporates exploration incentives into iterative DPO and GRPO, preserving solution diversity for inference-time reasoning.</li>\n<li>EDO improves reasoning on in-distribution and out-of-distribution benchmarks while maintaining model entropy and stabilizing reinforcement learning against over-optimization.</li>",
+    "image": null,
+    "tags": [
+      "LLM",
+      "Reinforcement Learning",
+      "Reasoning"
+    ]
+  },
+  {
+    "id": "flowrl",
+    "year": 2026,
+    "title": "FlowRL: A Taxonomy and Modular Framework for Reinforcement Learning with Diffusion Policies",
+    "url": "https://arxiv.org/abs/2603.27450",
+    "venue": "RLC 2026",
+    "authors": "<strong>Chenxiao Gao</strong>, Edward Chen, Tianyi Chen, Bo Dai",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/typoverflow/flow-rl"
+      }
+    ],
+    "summary": "<li>We organize the fast-growing landscape of RL with diffusion and flow policies into a unified taxonomy, clarifying the design choices behind existing algorithms.</li>\n        <li>We release a modular, JAX-based toolkit with JIT-compiled training and standardized benchmarks, making algorithms easy to compose, compare, and select across generative-modeling and robotics tasks.</li>",
+    "image": null,
+    "tags": [
+      "Reinforcement Learning",
+      "Diffusion & Flow",
+      "Benchmark"
+    ]
+  },
+  {
+    "id": "gempo",
+    "year": 2026,
+    "title": "GeMPO: Generalized Measure Matching for Online Diffusion Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2603.10250",
+    "venue": "Preprint",
+    "authors": "Haitong Ma, <strong>Chenxiao Gao</strong>, Tianyi Chen, Na Li, Bo Dai",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/typoverflow/flow-rl"
+      }
+    ],
+    "summary": "<li>We cast online diffusion RL through a measure-matching lens, generalizing the reweighting scheme from softmax to general monotonic functions.</li>\n        <li>By constructing a virtual target policy and minimizing divergence via reweighted flow matching, GeMPO enables flexible weight design and justifies negative reweighting that actively repels the policy from suboptimal actions.</li>",
+    "image": null,
+    "tags": [
+      "Reinforcement Learning",
+      "Diffusion & Flow"
+    ]
+  },
+  {
+    "id": "spectral-rl",
+    "year": 2025,
+    "title": "Spectral Representation-based Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2512.15036",
+    "venue": "JMLR (accepted)",
+    "authors": "<strong>Chenxiao Gao</strong>, Haotian Sun, Na Li, Dale Schuurmans, Bo Dai",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/spectral-rl/spectral-rl"
+      },
+      {
+        "label": "Project",
+        "url": "https://spectral-rl.github.io/"
+      }
+    ],
+    "summary": "<li>We derive spectral representations from a decomposition of the transition operator, yielding an effective abstraction of the system dynamics with a clear theoretical characterization for downstream policy optimization.</li>\n        <li>The framework covers latent-variable and energy-based dynamics, extends to POMDPs, and matches or exceeds strong baselines on 20+ DeepMind Control Suite tasks.</li>",
+    "image": "/images/SpectralRL/banner.png",
+    "tags": [
+      "Reinforcement Learning",
+      "Representation Learning"
+    ]
+  },
+  {
+    "id": "kimi-k2",
+    "year": 2025,
+    "title": "Kimi K2: Open Agentic Intelligence",
+    "url": "https://arxiv.org/abs/2507.20534",
+    "venue": "Tech Report",
+    "authors": "Kimi Team (incl. <strong>Chenxiao Gao</strong>)",
+    "links": [],
+    "summary": "<li>Kimi K2 is a 1T-parameter (32B active) mixture-of-experts model trained with the MuonClip optimizer for stable large-scale pre-training, achieving strong agentic and coding results (e.g., 65.8 on SWE-Bench Verified).</li>\n        <li>As part of the Kimi Team during my internship at <a href=\"https://www.moonshot.ai/\">Moonshot.AI</a>, I worked on strengthening the model’s interactive tool-use capability across agent scaffolding, supervised fine-tuning, and reinforcement learning.</li>",
+    "image": null,
+    "tags": [
+      "LLM",
+      "Agent"
+    ]
+  },
+  {
+    "id": "bdpo",
+    "year": 2025,
+    "title": "Behavior-Regularized Diffusion Policy Optimization for Offline Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2502.04778",
+    "venue": "ICML 2025",
+    "authors": "<strong>Chenxiao Gao</strong>, Chenyang Wu, Mingjun Cao, Chenjun Xiao, Yang Yu, Zongzhang Zhang",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/typoverflow/flow-rl"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://ai.gaocx.io/bdpo"
+      }
+    ],
+    "summary": "<li>We Introduce pathwise KL to estimate and control the divergences between two diffusion policies;</li>\n        <li>Leveraging pathwise KL, we propose an actor-critic framework with two-time-scale temporal difference learning to efficiently optimize diffusion policies with behavior regularization.</li>",
+    "image": "/images/BDPO/bdpo.png",
+    "tags": [
+      "Reinforcement Learning",
+      "Diffusion & Flow",
+      "Offline RL"
+    ]
+  },
+  {
+    "id": "ribbo",
+    "year": 2025,
+    "title": "Reinforced In-Context Black-Box Optimization",
+    "url": "https://arxiv.org/abs/2402.17423",
+    "venue": "IJCAI 2025",
+    "authors": "Lei Song*, <strong>Chenxiao Gao*</strong>, Ke Xue, Chenyang Wu, Dong Li, Jianye Hao, Zongzhang Zhang, Chao Qian",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/songlei00/RIBBO"
+      }
+    ],
+    "summary": "<li>RIBBO distills and reinforces existing black-box optimization algorithms by fitting regret augmented learning histories of the behavior algorithms.</li>\n        <li>By specifying a suitable regret-to-go, RIBBO generate better query decisions by auto-regressively predicting the next points.</li>",
+    "image": "/images/RIBBO/workflow.png",
+    "tags": [
+      "Black-Box Optimization",
+      "In-Context Learning"
+    ]
+  },
+  {
+    "id": "diffsr",
+    "year": 2024,
+    "title": "Diffusion Spectral Representation for Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2406.16121",
+    "venue": "NeurIPS 2024",
+    "authors": "<strong>Chenxiao Gao*</strong>, Dmitry Shribak*, Yitong Li, Chenjun Xiao, Bo Dai",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/haotiansun14/rl-rep"
+      },
+      {
+        "label": "Project",
+        "url": "https://haotiansun14.github.io/rl-rep-page/"
+      }
+    ],
+    "summary": "<li>We leverages the flexibility of diffusion models and extract spectral representations (Diff-SR) that capture the dynamics structure.</li>\n        <li>Diff-SR is able to represent the value function of any policy sufficiently, paving the way for efficient planning and exploration for downstream RL optimization.</li>",
+    "image": "/images/Diff-SR/diffusion.png",
+    "tags": [
+      "Reinforcement Learning",
+      "Diffusion & Flow",
+      "Representation Learning"
+    ]
+  },
+  {
+    "id": "hpl",
+    "year": 2024,
+    "title": "Hindsight Preference Learning for Offline Preference-based Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2407.04451",
+    "venue": "Preprint",
+    "authors": "<strong>Chenxiao Gao</strong>, Shengjun Fang, Chenjun Xiao, Yang Yu, Zongzhang Zhang",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/typoverflow/WiseRL"
+      }
+    ],
+    "summary": "<li>We identified shortages of the widely used preference modeling method in existing PbRL settings.</li>\n        <li>HPL leverages the vast unlabeled dataset to facilitate credit assignment, providing robust and advantageous rewards for downsteam RL optimization.</li>",
+    "image": "/images/HPL/workflow.png",
+    "tags": [
+      "Reinforcement Learning",
+      "Offline RL",
+      "Preference Learning"
+    ]
+  },
+  {
+    "id": "cpr",
+    "year": 2024,
+    "title": "Efficient and Stable Offline-to-online Reinforcement Learning via Continual Policy Revitalization",
+    "url": "https://www.ijcai.org/proceedings/2024/477",
+    "venue": "IJCAI 2024",
+    "authors": "Rui Kong, Chenyang Wu, <strong>Chenxiao Gao</strong>, Yang Yu, Zongzhang Zhang",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/LyndonKong/CPR"
+      }
+    ],
+    "summary": "<li>We identify two pain points in offline-to-online reinforcement learning: 1) value overestimation causes fluctuations during learning, and 2) the primacy bias hinders the policy from further improvement.</li>\n        <li>With the proposed Continual Policy Revitalization, we can fine-tune pret-rained policies efficiently and stably.</li>",
+    "image": "/images/CPR/workflow.png",
+    "tags": [
+      "Reinforcement Learning",
+      "Offline RL"
+    ]
+  },
+  {
+    "id": "redm",
+    "year": 2024,
+    "title": "Policy Rehearsing: Training Generalizable Policies for Reinforcement Learning",
+    "url": "https://openreview.net/pdf?id=m3xVPaZp6Z",
+    "venue": "ICLR 2024",
+    "authors": "Chengxing Jia*, <strong>Chenxiao Gao*</strong>, Hao Yin, Fuxiang Zhang, Xiong-Hui Chen, Tian Xu, Lei Yuan, Zongzhang Zhang, Yang Yu, Zhi-Hua Zhou",
+    "links": [],
+    "summary": "<li>We explore the idea of <em>rehearsal</em> for offline reinforcement learning, which generates diverse while eligible dynamics models using extremely limited amount of data and optimizes an contextual policy with the generated models.</li>\n        <li>By recognizing the context, the policy is able to generalize to the environment at hand during the online stage.</li>",
+    "image": "/images/ReDM/workflow.png",
+    "tags": [
+      "Reinforcement Learning",
+      "Offline RL",
+      "Generalization"
+    ]
+  },
+  {
+    "id": "reda",
+    "year": 2024,
+    "title": "Disentangling Policy from Offline Task Rpresentation Learning via Adversarial Data Augmentation",
+    "url": "https://arxiv.org/abs/2403.07261",
+    "venue": "AAMAS 2024",
+    "authors": "Chengxing Jia, Fuxiang Zhang, Yi-Chen Li, <strong>Chenxiao Gao</strong>, Xu-Hui Liu, Lei Yuan, Zongzhang Zhang, Yang Yu.",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/LAMDA-RL/ReDA"
+      }
+    ],
+    "summary": "<li>Learned task representations from previous OMRL methods tend to correlate spuriously with the behavior policy instead of the task.</li>\n        <li>We disentangle the effect of behavior policies from representation learning by adversarial data augmentation.</li>",
+    "image": "/images/ReDA/workflow.png",
+    "tags": [
+      "Reinforcement Learning",
+      "Offline RL",
+      "Representation Learning",
+      "Generalization"
+    ]
+  },
+  {
+    "id": "act",
+    "year": 2024,
+    "title": "ACT: Empowering Decision Transformer with Dynamic Programming via Advantage Conditioning",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29101/30081",
+    "venue": "AAAI 2024",
+    "authors": "<strong>Chenxiao Gao</strong>, Chenyang Wu, Mingjun Cao, Rui Kong, Zongzhang Zhang, Yang Yu",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/LAMDA-RL/ACT"
+      }
+    ],
+    "summary": "<li>We identify failure modes of existing return-conditioned decision-making systems, and suggest to use advantages as the property token for conditional generation.</li>",
+    "image": "/images/ACT/arch.png",
+    "tags": [
+      "Reinforcement Learning",
+      "Offline RL",
+      "In-Context Learning"
+    ]
+  },
+  {
+    "id": "gentle",
+    "year": 2024,
+    "title": "Generalizable Task Representation Learning for Offline Meta-Reinforcement Learning with Data Limitations",
+    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/29658/31121",
+    "venue": "AAAI 2024",
+    "authors": "Renzhe Zhou, <strong>Chenxiao Gao</strong>, Zongzhang Zhang, Yang Yu",
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/ZRZ-Unknow/GENTLE"
+      }
+    ],
+    "summary": "<li>Real-world RL applications are with data limitations, such as limited tasks and limited behavior diversity.</li>\n        <li>We develop GENTLE, a simple yet effective task representation learning method to extract generalizable and accurate task representations from offline contextual datasets.</li>",
+    "image": "/images/GENTLE/workflow.png",
+    "tags": [
+      "Reinforcement Learning",
+      "Offline RL",
+      "Representation Learning",
+      "Generalization"
+    ]
+  }
+]
