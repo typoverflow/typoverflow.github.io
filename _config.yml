@@ -161,3 +161,6 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Optional Cloudflare Worker base URL (no /stats suffix).
+visitor_stats_url: "https://homepage-visitors.typoverflow.workers.dev"

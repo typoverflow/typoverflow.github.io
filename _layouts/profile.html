@@ -23,8 +23,7 @@
         <a class="brand" href="{{ '/' | relative_url }}">About Me</a>
         <div class="nav-links">
           <a href="{{ '/' | relative_url }}"{% unless page.publication_page %} aria-current="page"{% endunless %}>Home</a>
-          <a href="{{ '/#-news' | relative_url }}">News</a>
-          <a href="{{ '/publications/' | relative_url }}"{% if page.publication_page %} aria-current="page"{% endif %}>Publications</a>
+          <a href="{{ '/publications/' | relative_url }}"{% if page.publication_page %} aria-current="page"{% endif %}>Publication</a>
         </div>
       </nav>
     </header>
@@ -41,6 +40,9 @@
       {% assign citations_url = 'https://raw.githubusercontent.com/' | append: site.repository | append: '/google-scholar-stats/gs_data.json' %}
     {% endif %}
     <script src="{{ '/assets/js/profile.js' | relative_url }}" data-citations-url="{{ citations_url }}" defer></script>
+    {% if page.visitor_globe %}
+    <script src="{{ '/assets/js/visitors.js' | relative_url }}" defer></script>
+    {% endif %}
     {% include analytics.html %}
   </body>
 </html>

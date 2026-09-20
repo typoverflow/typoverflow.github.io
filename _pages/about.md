@@ -1,5 +1,6 @@
 ---
 layout: profile
+visitor_globe: true
 last_updated: 2026-09-20
 permalink: /
 title: "Chenxiao Gao"
@@ -32,6 +33,25 @@ Feel free to contact me if you are interested in my research!
   <a class="contact-icon" href="https://x.com/{{ site.author.twitter }}" aria-label="X: @{{ site.author.twitter }}" title="X: @{{ site.author.twitter }}"><svg class="icon-x" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/></svg></a>
   <a class="contact-icon" href="{{ '/cv.pdf' | relative_url }}" aria-label="Curriculum vitae (PDF)" title="CV (PDF)"><span class="icon icon-cv" aria-hidden="true"></span></a>
   <span class="last-updated">Last updated on <time datetime="{{ page.last_updated | date: '%Y-%m-%d' }}">{{ page.last_updated | date: '%Y-%m' }}</time></span>
+</div>
+</section>
+
+<section class="card news-card" id="-news" aria-labelledby="news-heading">
+<h2 id="news-heading">News</h2>
+<div class="news-body">
+  <div class="news-year-group">
+    <div class="news-year">2026</div>
+    <ul class="news-items">
+      <li class="news-item">
+        <div><img class="news-emoji" src="{{ '/images/emoji/party-popper.svg' | relative_url }}" alt="🎉"> We released <a href="https://rle-bench.github.io/">RLE-Bench</a>, a benchmark evaluating coding agents as robot learning engineers. Read our <a href="https://rle-bench.github.io/blog/">research blog</a> and the <a href="https://seas.harvard.edu/news/can-your-ai-engineer-robot">Harvard SEAS news coverage</a>.</div>
+        <time datetime="2026-09">Sep</time>
+      </li>
+      <li class="news-item">
+        <div><img class="news-emoji" src="{{ '/images/emoji/round-pushpin.svg' | relative_url }}" alt="📍"> I moved to Boston and joined <a href="https://nali.seas.harvard.edu/">Prof. Na Li’s group</a> at Harvard University as a Research Fellow!</div>
+        <time datetime="2026-05">May</time>
+      </li>
+    </ul>
+  </div>
 </div>
 </section>
 
@@ -104,21 +124,21 @@ Feel free to contact me if you are interested in my research!
 - Teaching Assistant: [CX4240 - Computing for Data Analysis](https://bo-dai.github.io/CX4240-spring2026/)
 
 </section>
-<section class="card news-card" id="-news" aria-labelledby="news-heading">
-<h2 id="news-heading">News</h2>
-<div class="news-body">
-  <div class="news-year-group">
-    <div class="news-year">2026</div>
-    <ul class="news-items">
-      <li class="news-item">
-        <div><img class="news-emoji" src="{{ '/images/emoji/party-popper.svg' | relative_url }}" alt="🎉"> We released <a href="https://rle-bench.github.io/">RLE-Bench</a>, a benchmark evaluating coding agents as robot learning engineers. Read our <a href="https://rle-bench.github.io/blog/">research blog</a> and the <a href="https://seas.harvard.edu/news/can-your-ai-engineer-robot">Harvard SEAS news coverage</a>.</div>
-        <time datetime="2026-09">Sep</time>
-      </li>
-      <li class="news-item">
-        <div><img class="news-emoji" src="{{ '/images/emoji/round-pushpin.svg' | relative_url }}" alt="📍"> I moved to Boston and joined <a href="https://nali.seas.harvard.edu/">Prof. Na Li’s group</a> at Harvard University as a Research Fellow!</div>
-        <time datetime="2026-05">May</time>
-      </li>
-    </ul>
-  </div>
-</div>
+
+
+<div class="projects-visitors-card">
+<section class="card projects-column" aria-labelledby="projects-heading">
+<h2 id="projects-heading">Software / Projects</h2>
+<ul class="project-list">
+  <li><a href="https://rle-bench.github.io/">RLE-Bench <span aria-hidden="true">↗</span></a><p>A benchmark for evaluating coding agents as robot learning engineers.</p></li>
+  <li><a href="https://github.com/typoverflow/flow-rl">Flow-RL <span aria-hidden="true">↗</span></a><p>A modular JAX framework for reinforcement learning with diffusion and flow policies.</p></li>
+  <li><a href="https://spectral-rl.github.io/">Spectral-RL <span aria-hidden="true">↗</span></a><p>Spectral representations for reinforcement learning and downstream policy optimization.</p></li>
+</ul>
 </section>
+<section class="card visitors-column" id="visitors" aria-labelledby="visitors-heading" data-geography="{{ '/assets/data/globe.json' | relative_url }}" data-stats-url="{{ site.visitor_stats_url | default: '' | escape }}">
+<h2 id="visitors-heading">Visitors</h2>
+<canvas id="visitor-globe" width="600" height="600" tabindex="0" role="img" aria-label="Interactive world globe. Drag or use arrow keys to rotate; press Space to pause or resume.">An interactive globe showing the world.</canvas>
+<dl class="visitor-metrics"><div><dt>Visits</dt><dd id="visitor-count">—</dd></div><div><dt>Countries / regions</dt><dd id="visitor-countries">—</dd></div></dl>
+<noscript><p class="visitor-status">Enable JavaScript to explore the globe.</p></noscript>
+</section>
+</div>
