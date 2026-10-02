@@ -1,7 +1,7 @@
 ---
 layout: profile
 visitor_globe: true
-last_updated: 2026-09-20
+last_updated: 2026-10-01
 permalink: /
 title: "Chenxiao Gao"
 excerpt: "Ph.D. student at Georgia Tech researching reinforcement learning, representation learning, and generative models."
@@ -42,6 +42,10 @@ Feel free to contact me if you are interested in my research!
   <div class="news-year-group">
     <div class="news-year">2026</div>
     <ul class="news-items">
+      <li class="news-item">
+        <div><img class="news-emoji" src="{{ '/images/emoji/party-popper.svg' | relative_url }}" alt="🎉"> Our new preprint, <a href="https://arxiv.org/abs/2609.37677">Learning Expressive and Compositional Motion Representation via Spectral Skills</a>, won the <strong>Best Paper Award</strong> at the IROS 2026 Workshop on Compositional and Modular Learning in the Era of Scaling Robotics! Explore the <a href="https://spectral-skill.github.io/">project page</a>.</div>
+        <time datetime="2026-10">Oct</time>
+      </li>
       <li class="news-item">
         <div><img class="news-emoji" src="{{ '/images/emoji/party-popper.svg' | relative_url }}" alt="🎉"> We released <a href="https://rle-bench.github.io/">RLE-Bench</a>, a benchmark evaluating coding agents as robot learning engineers. Read our <a href="https://rle-bench.github.io/blog/">research blog</a> and the <a href="https://seas.harvard.edu/news/can-your-ai-engineer-robot">Harvard SEAS news coverage</a>.</div>
         <time datetime="2026-09">Sep</time>

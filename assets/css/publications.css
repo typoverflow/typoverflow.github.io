@@ -19,6 +19,7 @@
 .publication-title a:hover { color: #2c5282; text-decoration-color: #2c5282; }
 .publication-venue { font-size: 14px; color: #495057; font-weight: 700; margin: 0 0 4px; }
 .publication-venue.is-preprint { font-weight: 400; color: var(--muted); }
+.publication-award { font-size: 14px; line-height: 1.5; color: #8a5700; font-weight: 700; margin: 4px 0 0; }
 .publication-authors { font-size: 13px; line-height: 1.6; color: var(--muted); margin: 10px 0 0; }
 .publication-authors strong { color: #495057; }
 .publication-foot { margin-top: 16px; padding-top: 13px; border-top: 1px solid #edf0f2; }

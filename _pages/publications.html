@@ -29,6 +29,7 @@ redirect_from:
         <article class="publication-card" id="{{ paper.id }}" data-topics="{{ paper.tags | join: '|' | escape }}">
           <h3 class="publication-title"><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
           <p class="publication-venue{% if paper.venue == 'Preprint' %} is-preprint{% endif %}">{{ paper.venue }}</p>
+          {% if paper.award %}<p class="publication-award">{{ paper.award }}</p>{% endif %}
           <p class="publication-authors">{{ paper.authors }}</p>
           <div class="publication-foot">
             <div class="publication-links">
